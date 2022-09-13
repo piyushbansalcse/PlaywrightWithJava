@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Admin portal regression suite" thread-count="2" parallel="tests" verbose="4">
+
+	<listeners>
+
+		<listener class-name="com.qa.admin.listeners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="Admin portal Login Test">
+
+		<classes>
+			<class name="com.qa.admin.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+</suite>
